@@ -1,0 +1,12 @@
+var temp;
+var cur = 1;
+var prev = 0;
+
+var count = 0;
+while (count < 21) {
+    temp = cur;
+    cur = cur + prev;
+    prev = temp;
+    print "fibonacci " + count + " : " + cur;
+    count = count + 1;
+}

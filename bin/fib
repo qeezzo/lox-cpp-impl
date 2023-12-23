@@ -1,0 +1,35 @@
+fun fib(n) {
+    if (n <= 1) return n;
+    return fib(n - 1) + fib(n - 0x2);
+}
+
+print fib;
+for (var i = 0; i < 21; i = i + 1)
+    print "fib" + ' ' + (i+1) + " : " + fib(i);
+
+
+print "😏power : " + type(pow(2.1, 2) + 1);
+print "😉log2  : " + log2(64);
+
+print "right shift : " + (0b11111111 << 0b10);
+var num = (10 >> 1);
+print "left  shift : " + num;
+
+if (num == 5)
+    print "horray😍😍😍!!!";
+else
+    print "sooo saddd😭😭😭😭😭";
+
+
+var temp;
+var cur = 1;
+var prev = 0;
+
+var count = 0;
+while (count < 21) {
+    temp = cur;
+    cur = cur + prev;
+    prev = temp;
+    print "fibonacci " + count + " : " + cur;
+    count = count + 1;
+}

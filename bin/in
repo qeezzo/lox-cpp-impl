@@ -1,0 +1,11 @@
+var i = "hello";
+fun return_func() {
+
+    fun func () {
+        return i;
+    }
+    return func;
+}
+
+var a = return_func();
+print a();

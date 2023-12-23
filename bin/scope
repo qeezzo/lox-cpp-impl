@@ -1,0 +1,17 @@
+var a = "gloabal A";
+var b = "gloabal B";
+{
+    a = "scoped A";
+    var b = "scoped B";
+    {
+        var a = "inner A";
+        b = "inner B";
+
+        print a;
+        print b;
+    }
+    print a;
+    print b;
+}
+print a;
+print b;
