@@ -1,3 +1,3 @@
-This is my lox lang implementation with own simple additions.
+This is my cpp implementation of the Lox programming language.
 
 See here: http://craftinginterpreters.com
